@@ -1,3 +1,14 @@
 * {
+    box-sizing: border-box;
     font-family: 'Inter', sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+.container {
+    margin: 0 auto;
+    width: 1100px;
+    background-color: #282D35;
 }

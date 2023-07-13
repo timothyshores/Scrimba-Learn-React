@@ -1,0 +1,30 @@
+nav {
+    display: flex;
+    padding: 40px;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #21222A; */
+}
+
+.left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+img {
+    width: 50px;
+    height: 50px;
+}
+
+h2 {
+    color: #61DAFB;
+    font-size: 2.25rem;
+}
+
+h3 {
+    color: #DEEBF8;
+
+    font-size: 2rem;
+    font-weight: 400;
+}
