@@ -1,9 +1,8 @@
-import AirBnbLogo from "../images/airbnb-logo.png";
 import "./Navbar.css";
 
 const Navbar = () => (
 	<nav className="navbar">
-		<img src={AirBnbLogo} alt="AirBnb Logo" />
+		<img src="../../public/images/airbnb-logo.png" alt="AirBnb Logo" />
 	</nav>
 );
 
