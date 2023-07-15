@@ -1,0 +1,32 @@
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+.hero {
+    margin: 10px;
+}
+
+.hero-container {
+    display: flex;
+    justify-content: center;
+}
+
+.hero img {
+    margin-top: 20px;
+    width: 400px;
+}
+
+.text {
+    margin: 20px;
+    line-height: 110%;
+}
+
+.hero-header {
+    font-weight: 600;
+    font-size: 36px;
+}
+
+.hero-description {
+    font-weight: 300;
+    font-size: 17px;
+}
