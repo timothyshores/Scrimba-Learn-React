@@ -1,0 +1,9 @@
+.navbar {
+    height: 60x;
+    box-shadow: 0px 3px 7px rgba(0, 0, 0, 0.1);
+}
+
+.navbar img {
+    margin: 20px 25px;
+    width: 80px
+}

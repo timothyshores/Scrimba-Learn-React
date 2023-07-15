@@ -1,12 +1,8 @@
-import AirBnbLogo from "./images/airbnb-logo.png";
+import Navbar from "./components/Navbar";
 import "./App.css";
 
 const App = () => {
-	return (
-		<div className="navbar">
-			<img src={AirBnbLogo} alt="AirBnb Logo" width={80} />
-		</div>
-	);
+	return <Navbar />;
 };
 
 export default App;
