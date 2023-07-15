@@ -10,5 +10,7 @@ body {
 .container {
     margin: 0 auto;
     width: 1100px;
+    height: 700px;
     background-color: #282D35;
+    padding: 0;
 }

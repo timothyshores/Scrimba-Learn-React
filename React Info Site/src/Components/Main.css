@@ -1,0 +1,38 @@
+.container {
+    padding: 30px;
+    margin: 30px;
+    background-image: url(../assets/react-icon-large.png);
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: 250px 350px;
+}
+
+h1 {
+    color: #FFFFFF;
+    font-size: 4rem;
+    margin-top: 90px;
+    margin-left: 60px;
+    margin-bottom: 0;
+}
+
+li {
+    color:#FFFFFF;
+    font-size: 1.9rem;
+    font-weight: 400;
+    margin: 20px 100px;
+    padding-left: 15px;
+}
+
+ul li::marker {
+    color: #61DAFB;
+    font-size: 60px;
+}
+
+.content {
+    display: flex;
+}
+
+img {
+    align-self: center;
+    color: #33373E;
+}

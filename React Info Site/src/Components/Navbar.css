@@ -3,7 +3,7 @@ nav {
     padding: 40px;
     align-items: center;
     justify-content: space-between;
-    background-color: #21222A; */
+    background-color: #21222A;
 }
 
 .left {
@@ -24,7 +24,6 @@ h2 {
 
 h3 {
     color: #DEEBF8;
-
     font-size: 2rem;
     font-weight: 400;
 }
