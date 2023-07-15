@@ -1,10 +1,11 @@
+import AirBnbLogo from "./images/airbnb-logo.png";
 import "./App.css";
 
 const App = () => {
 	return (
-		<>
-			<h1>AirBnb Clone</h1>
-		</>
+		<div className="navbar">
+			<img src={AirBnbLogo} alt="AirBnb Logo" width={80} />
+		</div>
 	);
 };
 
