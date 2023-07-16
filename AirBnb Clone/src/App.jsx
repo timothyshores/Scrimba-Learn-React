@@ -10,29 +10,9 @@ const App = () => (
 		<Navbar />
 		<Hero />
 		<div className="cards-container">
-			{cardDataArray.map(
-				({
-					id,
-					title,
-					description,
-					price,
-					coverImg,
-					stats,
-					location,
-					openSpots,
-				}) => (
-					<Card
-						key={id}
-						title={title}
-						description={description}
-						price={price}
-						coverImg={coverImg}
-						stats={stats}
-						location={location}
-						openSpots={openSpots}
-					/>
-				)
-			)}
+			{cardDataArray.map((cardData) => (
+				<Card key={cardData.id} {...cardData} />
+			))}
 		</div>
 	</>
 );
