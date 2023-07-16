@@ -1,26 +1,20 @@
-/* eslint-disable no-unused-vars */
-
 import PropTypes from "prop-types";
 import "./Card.css";
 
-const Card = ({
-	title,
-	description,
-	price,
-	coverImg,
-	stats,
-	location,
-	openSpots,
-}) => {
+const Card = ({ title, price, coverImg, stats, location, openSpots }) => {
 	const { rating, reviewCount } = stats;
 	const imageLocation = `../../public/images/${coverImg}`;
+	const badgeShouldDisplay = openSpots === 0 || location === "Online";
+	const badgeText = !openSpots
+		? "SOLD OUT"
+		: location === "Online"
+		? "ONLINE"
+		: "";
 
 	return (
 		<div className="card">
-			<img
-				src={imageLocation}
-				className="card-image"
-			/>
+			{badgeShouldDisplay && <div className="card--badge">{badgeText}</div>}
+			<img src={imageLocation} className="card-image" />
 			<div className="info">
 				<img
 					src="../../public/images/star.png"
@@ -40,7 +34,6 @@ const Card = ({
 };
 
 Card.propTypes = {
-	id: PropTypes.number.isRequired,
 	title: PropTypes.string.isRequired,
 	description: PropTypes.string,
 	price: PropTypes.number.isRequired,
@@ -50,7 +43,7 @@ Card.propTypes = {
 		reviewCount: PropTypes.number.isRequired,
 	}).isRequired,
 	location: PropTypes.string.isRequired,
-	openSpots: PropTypes.number,
+	openSpots: PropTypes.number.isRequired,
 };
 
 export default Card;
