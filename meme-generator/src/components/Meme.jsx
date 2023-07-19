@@ -27,19 +27,40 @@ export default function Meme() {
 		}));
 	}
 
+	const handleChange = (e) => {
+		const { value, name } = e.target;
+		setMeme((prevMeme) => ({ ...prevMeme, [name]: value }));
+	};
+
+	const { topText, bottomText, randomImage } = meme;
+
 	return (
 		<main>
 			<div className="form">
-				<input type="text" placeholder="Top text" className="form--input" />
-				<input type="text" placeholder="Bottom text" className="form--input" />
+				<input
+					type="text"
+					placeholder="Top text"
+					className="form--input"
+					onChange={handleChange}
+					name="topText"
+					value={topText}
+				/>
+				<input
+					type="text"
+					placeholder="Bottom text"
+					className="form--input"
+					onChange={handleChange}
+					name="bottomText"
+					value={bottomText}
+				/>
 				<button className="form--button" onClick={getMemeImage}>
 					Get a new meme image 🖼
 				</button>
 			</div>
 			<div className="meme">
-				<img src={meme.randomImage} className="meme--image" />
-				<h2 className="meme--text top">One does not simply</h2>
-				<h2 className="meme--text bottom">Walk into Mordor</h2>
+				<img src={randomImage} className="meme--image" />
+				<h2 className="meme--text top">{topText}</h2>
+				<h2 className="meme--text bottom">{bottomText}</h2>
 			</div>
 		</main>
 	);
